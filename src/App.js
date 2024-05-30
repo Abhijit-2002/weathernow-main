@@ -1,7 +1,5 @@
 import hot from "./Assets/sunny.jpg";
 import cool from "./Assets/cold.jpg";
-import bg17 from "./Assets/bg17.png";
-import cloudy from "./Assets/cloudy.png";
 import Description from "./components/Description.jsx"
 import "./App.css";
 
@@ -14,7 +12,7 @@ function App() {
   const[weather,setweather] = useState(null);
   const [units,setunits] = useState("metric");
   const [city, setCity] = useState("Kolkata");
-  const [bg,setbg] = useState(bg17);
+  const [bg,setbg] = useState(hot);
 
   useEffect(()=>{
     const fetchWeatherData = async() =>{
